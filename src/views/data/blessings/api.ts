@@ -1,5 +1,6 @@
 import { request } from '@/utils/api'
-import type { ApiResponse, Blessing } from '../types'
+import type { ApiResponse } from '../types'
+import type { Blessing } from './types'
 
 export const getBlessings = async (): Promise<ApiResponse<Blessing[]>> => {
   return request.get<ApiResponse<Blessing[]>>('/api/data/blessings')

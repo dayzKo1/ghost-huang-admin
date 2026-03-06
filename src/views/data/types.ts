@@ -41,6 +41,8 @@ export interface Production {
   producers: string[]
   musicians: string[]
   visualDesign?: string
+}
+
 export interface Concert {
   id: string
   date: string
@@ -48,7 +50,6 @@ export interface Concert {
   places: string
   content: ConcertContent[]
   songTimestamps?: Record<string, string>
-} songTimestamps?: Record<string, string>
 }
 
 export interface ConcertContent {

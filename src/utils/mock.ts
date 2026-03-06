@@ -74,6 +74,6 @@ export const mockLogin = async (
 
 // Check if mock mode is enabled
 export const isMockMode = (): boolean => {
-  return true
+  return import.meta.env.VITE_USE_MOCK === 'true'
 }
 
