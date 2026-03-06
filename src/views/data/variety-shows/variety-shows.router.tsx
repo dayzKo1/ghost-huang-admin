@@ -4,11 +4,11 @@ import VarietyShowsPage from '.'
 
 const varietyShowsRoutes: AdminRouterItem[] = [
   {
-    path: 'data/variety-shows',
+    path: '/data/variety-shows',
     element: <VarietyShowsPage />,
     meta: {
-      label: 'Variety Shows',
-      title: 'Variety Shows Management',
+      label: '综艺',
+      title: '综艺管理',
       key: '/data/variety-shows',
       icon: <VideoCameraOutlined />,
       order: 4,

@@ -4,11 +4,11 @@ import ConcertsPage from '.'
 
 const concertsRoutes: AdminRouterItem[] = [
   {
-    path: 'data/concerts',
+    path: '/data/concerts',
     element: <ConcertsPage />,
     meta: {
-      label: 'Concerts',
-      title: 'Concerts Management',
+      label: '演唱会',
+      title: '演唱会管理',
       key: '/data/concerts',
       icon: <AudioOutlined />,
       order: 2,

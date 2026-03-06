@@ -4,11 +4,11 @@ import AlbumsPage from '.'
 
 const albumsRoutes: AdminRouterItem[] = [
   {
-    path: 'data/albums',
+    path: '/data/albums',
     element: <AlbumsPage />,
     meta: {
-      label: 'Albums',
-      title: 'Albums Management',
+      label: '专辑',
+      title: '专辑管理',
       key: '/data/albums',
       icon: <CustomerServiceOutlined />,
       order: 1,

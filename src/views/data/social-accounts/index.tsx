@@ -18,7 +18,7 @@ const SocialAccountsPage = () => {
     setLoading(true)
     try {
       const response = await getSocialAccounts()
-      setSocialAccounts(response.data || [])
+      setSocialAccounts(response.data ? [response.data] : [])
     } catch (error) {
       console.error(error)
       message.error('Failed to load social accounts. Please try again later.')

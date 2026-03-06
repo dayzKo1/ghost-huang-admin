@@ -4,11 +4,11 @@ import TeamPage from '.'
 
 const teamRoutes: AdminRouterItem[] = [
   {
-    path: 'data/team',
+    path: '/data/team',
     element: <TeamPage />,
     meta: {
-      label: 'Team',
-      title: 'Team Management',
+      label: '团队',
+      title: '团队管理',
       key: '/data/team',
       icon: <TeamOutlined />,
       order: 3,

@@ -19,7 +19,7 @@ const TalksPage = () => {
     setLoading(true)
     try {
       const response = await getTalks()
-      setTalks(response.data || [])
+      setTalks(response.data ? [response.data] : [])
     } catch (error) {
       console.error(error)
       message.error('Failed to load talks. Please try again later.')
